@@ -13,7 +13,7 @@ export interface QuizQuestion {
 }
 
 export interface Chapter {
-  id: string;
+  id:string;
   title: string;
   order: number;
   videoId_1: string; // YouTube ID

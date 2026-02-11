@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
@@ -52,6 +52,47 @@
         filter: blur(100px);
         opacity: 0.4;
         z-index: -1;
+      }
+
+      /* Custom Prose Styles for Markdown Content */
+      .prose-custom h1 {
+        font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem;
+        background: linear-gradient(to right, #c084fc, #818cf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .prose-custom h2 {
+        font-size: 1.75rem; font-weight: 800; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); color: #c7d2fe;
+      }
+      .prose-custom h3 {
+        font-size: 1.25rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.5rem; color: #a5b4fc;
+      }
+      .prose-custom p {
+        line-height: 1.75; color: #94a3b8; margin-bottom: 1.25rem;
+      }
+      .prose-custom ul, .prose-custom ol {
+        margin-left: 1rem; margin-bottom: 1.25rem; color: #94a3b8;
+      }
+      .prose-custom li {
+        padding-left: 0.5rem; margin-bottom: 0.5rem;
+      }
+      .prose-custom li::marker {
+        color: #818cf8;
+      }
+      .prose-custom pre {
+        background-color: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.75rem; padding: 1.5rem; margin: 2rem 0; font-family: 'Geist Mono', monospace;
+      }
+      .prose-custom code {
+        color: #e2e8f0; font-size: 0.875rem;
+      }
+      .prose-custom blockquote {
+        border-left: 4px solid #6366f1; padding-left: 1.5rem; margin: 2rem 0; color: #a5b4fc; font-style: italic;
+      }
+      .prose-custom a {
+        color: #818cf8; text-decoration: none; border-bottom: 1px solid #818cf8;
+      }
+      .prose-custom a:hover {
+        color: #c7d2fe;
       }
     </style>
   <script type="importmap">
