@@ -1,4 +1,20 @@
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 
+import ForgotPassword from "./components/ForgotPassword";
+import ResetPassword from "./components/ResetPassword";
+<BrowserRouter>
+
+<Routes>
+
+<Route path="/" element={<AuthPage onLogin={handleLogin}/>}/>
+
+<Route path="/forgot-password" element={<ForgotPassword/>}/>
+
+<Route path="/reset-password/:token" element={<ResetPassword/>}/>
+
+</Routes>
+
+</BrowserRouter>
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
